@@ -21,18 +21,20 @@ You should create a **public** Git repository for free on [Github](https://githu
 ### Task:
 
 Your task is to create an app that will:
- - Fetch the top 20 most popular movies from the API
- - Cache the API response locally on the device
- - Display the API response in a list. Each item in the list should show the:
-    - Image
-    - Title
-    - Overview
-    - Average rating
+
+* Fetch the top 20 most popular movies from the API
+* Cache the API response locally on the device
++ Display the API response in a list. Each item in the list should show the:
+    * Image
+    * Title
+    * Overview
+    * Average rating
 
 What we're looking for:
-- Clean code and project structure
-- Unit Tests and/or UI Tests
-- Use of existing open source libraries
-- Understanding of native UX/Design
+
+* Clean code and project structure
+* Unit Tests and/or UI Tests
+* Use of existing open source libraries
+* Understanding of native UX/Design
 
 ---

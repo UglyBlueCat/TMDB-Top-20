@@ -15,6 +15,10 @@
 		99618E3B1E94D810004F889B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99618E391E94D810004F889B /* LaunchScreen.storyboard */; };
 		99618E461E94D810004F889B /* TMDB_Top_20Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99618E451E94D810004F889B /* TMDB_Top_20Tests.swift */; };
 		99618E511E94D810004F889B /* TMDB_Top_20UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99618E501E94D810004F889B /* TMDB_Top_20UITests.swift */; };
+		99618E621E94D8A4004F889B /* API_Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99618E5E1E94D8A4004F889B /* API_Interface.swift */; };
+		99618E631E94D8A4004F889B /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99618E5F1E94D8A4004F889B /* DataHandler.swift */; };
+		99618E641E94D8A4004F889B /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99618E601E94D8A4004F889B /* Globals.swift */; };
+		99618E651E94D8A4004F889B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99618E611E94D8A4004F889B /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		99618E4C1E94D810004F889B /* TMDB Top 20UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TMDB Top 20UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99618E501E94D810004F889B /* TMDB_Top_20UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDB_Top_20UITests.swift; sourceTree = "<group>"; };
 		99618E521E94D810004F889B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99618E5E1E94D8A4004F889B /* API_Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Interface.swift; sourceTree = "<group>"; };
+		99618E5F1E94D8A4004F889B /* DataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		99618E601E94D8A4004F889B /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		99618E611E94D8A4004F889B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 		99618E2C1E94D810004F889B /* TMDB Top 20 */ = {
 			isa = PBXGroup;
 			children = (
+				99618E5E1E94D8A4004F889B /* API_Interface.swift */,
+				99618E5F1E94D8A4004F889B /* DataHandler.swift */,
+				99618E601E94D8A4004F889B /* Globals.swift */,
+				99618E611E94D8A4004F889B /* NetworkManager.swift */,
 				99618E2D1E94D810004F889B /* AppDelegate.swift */,
 				99618E2F1E94D810004F889B /* ViewController.swift */,
 				99618E311E94D810004F889B /* Main.storyboard */,
@@ -265,9 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99618E621E94D8A4004F889B /* API_Interface.swift in Sources */,
 				99618E361E94D810004F889B /* TMDB_Top_20.xcdatamodeld in Sources */,
+				99618E641E94D8A4004F889B /* Globals.swift in Sources */,
+				99618E651E94D8A4004F889B /* NetworkManager.swift in Sources */,
 				99618E301E94D810004F889B /* ViewController.swift in Sources */,
 				99618E2E1E94D810004F889B /* AppDelegate.swift in Sources */,
+				99618E631E94D8A4004F889B /* DataHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

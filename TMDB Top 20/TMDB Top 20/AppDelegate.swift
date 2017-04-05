@@ -16,7 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let apiInterface : API_Interface = API_Interface()
+        
+        apiInterface.getRequest(params: testParams, urlString: apiURL) { (data, urlResponse, error) in
+            apiInterface.handleResponse(response: urlResponse as! HTTPURLResponse)
+            
+            guard error == nil else {
+                DLog("Error: \(String(describing: error))")
+                return
+            }
+            
+            let dataHandler : DataHandler = DataHandler()
+            
+            dataHandler.newData(newData: data!)
+        }
+        
         return true
     }
 

@@ -53,14 +53,17 @@ class DataHandler {
     func storeMovies(movieArray : NSArray) {
         for i in 0..<movieArray.count {
             if let movie = movieArray[i] as? NSDictionary {
-                if let poster_path = movie["poster_path"] as? String,
+                if let id = movie["id"] as? Int,
+                    let poster_path = movie["poster_path"] as? String,
                     let title = movie["title"] as? String,
                     let overview = movie["overview"] as? String,
-                    let vote_average = movie["vote_average"] as? Float {
-                        DLog("poster_path: \(poster_path)")
-                        DLog("title: \(title)")
-                        DLog("overview: \(overview)")
-                        DLog("vote_average: \(vote_average)")
+                    let vote_average = movie["vote_average"] as? Float
+                {
+                    DB_Interface.sharedInstance.addMovie(theID: id,
+                                                         theTitle: title,
+                                                         theOverview: overview,
+                                                         thePosterPath: poster_path,
+                                                         theVoteAverage: vote_average)
                 } else {
                     DLog("Cannot extract data fields from movieArray[\(i)]")
                 }

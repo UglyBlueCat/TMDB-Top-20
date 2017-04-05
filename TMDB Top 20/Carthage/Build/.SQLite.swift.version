@@ -1,0 +1,28 @@
+{
+  "commitish" : "0.11.3",
+  "iOS" : [
+    {
+      "name" : "SQLite",
+      "md5" : "b465e3e77570ad761de07a4adae7983c"
+    }
+  ],
+  "xcodeVersion" : "Xcode 8.3\nBuild version 8E162",
+  "watchOS" : [
+    {
+      "name" : "SQLite",
+      "md5" : "23621f637d70a7b22ac8ea6e7accf8d9"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "SQLite",
+      "md5" : "3b474456ee6f7fa502890767ed94bb59"
+    }
+  ],
+  "Mac" : [
+    {
+      "name" : "SQLite",
+      "md5" : "9253fce13756830ddfaa8c09d89e51c1"
+    }
+  ]
+}
